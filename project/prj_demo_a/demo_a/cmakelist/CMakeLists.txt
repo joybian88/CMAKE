@@ -14,7 +14,7 @@ if(CMAKE_COMPILER_IS_GNUCXX)
     message(STATUS "optional:-std=c++11")
 endif(CMAKE_COMPILER_IS_GNUCXX)
 
-add_definitions("-w -Wall")
+add_definitions("-w -Wall -static")
 
 # The version number.
 set (VERSION_MAJOR 100)

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
-#include "Config.h"
-#include "fun1.h"
+// #include "Config.h"
+//#include "fun1.h"
 // extern void fun1();
 
 void  main(int argc, char *argv[])
