@@ -14,7 +14,7 @@ aux_source_directory(${PRJ_DEMOA_PATH}/demo_a/main MODULE_MAIN_FILE)
 #set module link file path
 set(PRJ_MODULE_LINK_PATH
     ${EXECUTABLE_OUTPUT_PATH}
-# )
+	)
 link_directories(${PRJ_MODULE_LINK_PATH})
 
 # add the executable
