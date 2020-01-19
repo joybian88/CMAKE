@@ -14,8 +14,7 @@ fi
 
 if [ -d ${pwd}/pkg ];then
 
-    rm -rf ${pwd}/pkg 
-    mkdir -p ${pwd}/pkg    
+    rm -rf ${pwd}/pkg/* 
     else 
         mkdir -p ${pwd}/pkg
       
@@ -25,7 +24,7 @@ cd ${pwd}
 
 if [ -d ${root_path}/target/prj_demo_a/exe ];then
     cp ../../target/prj_demo_a/exe/* ./pkg
-    chmod +777 *
+    chmod +777 ./pkg/*
     else 
         docker rmi busybox:latest
         rm -rf ./pkg
@@ -35,7 +34,7 @@ if [ -d ${root_path}/target/prj_demo_a/exe ];then
 fi
 
 docker build -t demoa:${tag} .
-docker save -o demoa.tar demoa:${tag}
+# docker save -o demoa.tar demoa:${tag}
 docker rmi busybox:latest
 # docker rmi demoa:${tag}
-rm -rf ./pkg
+# rm -rf ./pkg
